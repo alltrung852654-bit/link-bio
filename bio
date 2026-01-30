@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trung Tấn | Bio Link</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin-bottom: 15px;
+        }
+        h1 {
+            margin: 10px 0 5px;
+        }
+        p {
+            opacity: 0.85;
+            margin-bottom: 25px;
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background: rgba(255,255,255,0.15);
+            padding: 15px;
+            margin: 12px auto;
+            max-width: 400px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        a:hover {
+            background: rgba(255,255,255,0.35);
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+    <img src="https://i.imgur.com/6VBx3io.png">
+
+    <h1>Trung Tấn</h1>
+    <p>💻 Kỹ thuật máy tính | 🔧 PC & Laptop</p>
+
+    <a href="https://facebook.com/" target="_blank">📘 Facebook</a>
+    <a href="https://zalo.me/" target="_blank">💬 Zalo</a>
+    <a href="tel:0900000000">📞 Gọi ngay</a>
+
+</body>
+</html>
