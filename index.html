@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <title>Trung Tấn | Bio Link</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', sans-serif;
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: white;
+            color: #fff;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            padding: 35px 25px;
+            width: 100%;
+            max-width: 380px;
             text-align: center;
-            padding: 40px 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
         }
 
         .avatar {
@@ -19,45 +41,62 @@
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid #fff;
+            box-shadow: 0 0 25px rgba(255,255,255,0.5);
             margin-bottom: 15px;
         }
 
         h1 {
             margin: 10px 0 5px;
+            font-size: 24px;
         }
 
-        p {
+        .bio {
+            font-size: 14px;
             opacity: 0.85;
             margin-bottom: 25px;
         }
 
-        a {
-            display: block;
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             text-decoration: none;
-            color: white;
+            color: #fff;
             background: rgba(255,255,255,0.15);
-            padding: 15px;
-            margin: 12px auto;
-            max-width: 400px;
-            border-radius: 10px;
-            transition: 0.3s;
+            padding: 14px;
+            margin: 12px 0;
+            border-radius: 12px;
+            font-size: 15px;
+            transition: 0.25s;
         }
 
-        a:hover {
+        .link i {
+            font-size: 18px;
+        }
+
+        .link:hover {
             background: rgba(255,255,255,0.35);
-            transform: scale(1.03);
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            opacity: 0.6;
         }
     </style>
 </head>
 <body>
 
-    <!-- AVATAR -->
-    <img src="avt.jpg" alt="Tấn Trung" class="avatar">
+<div class="card">
+    <!-- Avatar -->
+    <img src="avt.jpg" alt="Trung Tấn" class="avatar">
 
-    <h1>Tấn Trung</h1>
-    <p>💻 Kỹ Thuật Máy Tính | 🔧 PC & Laptop</p>
+    <h1>Trung Tấn</h1>
+    <div class="bio">💻 Kỹ thuật máy tính · 🔧 PC & Laptop</div>
 
-<!-- Links -->
+    <!-- Links -->
     <a class="link" href="https://facebook.com/tinhdautuoi22" target="_blank">
         <i class="fab fa-facebook"></i> Facebook
     </a>
@@ -66,12 +105,12 @@
         <i class="fab fa-facebook-messenger"></i> Messenger
     </a>
 
-    <a class="link" href="https://zalo.me/0393644871" target="_blank">
+    <a class="link" href="https://zalo.me/" target="_blank">
         <i class="fas fa-comment-dots"></i> Zalo
     </a>
 
     <footer>
-        © 2026 Tấn Trung
+        © 2026 Trung Tấn
     </footer>
 </div>
 
