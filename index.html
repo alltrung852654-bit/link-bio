@@ -79,9 +79,21 @@
             font-size: 18px;
         }
 
+        /* Icon ảnh (Zalo) giả lập Font Awesome */
+        .icon-fa {
+            width: 18px;
+            height: 18px;
+            filter: brightness(0) invert(1);
+            opacity: 0.9;
+        }
+
         .link:hover {
             background: rgba(255,255,255,0.35);
             transform: translateY(-2px) scale(1.02);
+        }
+
+        .link:hover .icon-fa {
+            opacity: 1;
         }
 
         footer {
@@ -105,11 +117,14 @@
         <i class="fab fa-facebook"></i> Facebook
     </a>
 
+    <!-- Zalo (icon đồng bộ với FB & Drive) -->
     <a class="link" href="https://zalo.me/0393644871" target="_blank">
-        <i class="fas fa-comment-dots"></i> Zalo
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+             alt="Zalo" class="icon-fa">
+        Zalo
     </a>
 
-    <!-- Google Drive (đưa xuống cuối) -->
+    <!-- Google Drive -->
     <a class="link" href="https://drive.google.com/drive/folders/1YX5OSCwwfeE0_EZl1aZI5_EnLN4hXnm1?usp=drive_link" target="_blank">
         <i class="fab fa-google-drive"></i> Google Drive
     </a>
